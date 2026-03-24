@@ -209,7 +209,7 @@ section {
 .about .content .img-card {
   position: relative;
   width: 100%;
-  min-height: 450px;
+  min-height: 600px;
 }
 
 .about .content .img-card img {
@@ -443,7 +443,6 @@ section {
 
 .contact .row .card {
   background: #fff;
-  width: 240px;
   margin: 20px;
   padding: 25px;
   display: flex;
