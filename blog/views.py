@@ -14,7 +14,9 @@ def index(request):
         name = request.POST.get('name')
         email = request.POST.get('email')
         message = request.POST.get('message')
-        Contact.objects.create(name=name, email=email, message=message)
+        telegram_nick = request.POST.get('telegram_nick')
+        phone_number = request.POST.get('phone_number')
+        Contact.objects.create(name=name, email=email, message=message, telegram_nick=telegram_nick, phone_number=phone_number)
         is_success = True
         return redirect('index')
     return render(request, 'index.html', {'myworks': myworks, 'is_success': is_success})

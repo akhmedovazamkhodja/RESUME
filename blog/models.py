@@ -17,6 +17,8 @@ class Contact(models.Model):
     name = models.TextField(null=True, blank=True)
     email = models.EmailField(null=True, blank=True)
     message = models.TextField(null=True, blank=True)
+    phone_number = models.IntegerField(null=True, blank=True)
+    telegram_nick = models.TextField(null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
